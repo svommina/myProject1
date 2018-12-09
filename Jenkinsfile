@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'mvn clean compile'
+        bat 'mvn clean compile'
       }
     }
     stage('Test') {
@@ -22,7 +22,7 @@ pipeline {
     }
     stage('Package') {
       steps {
-        sh 'mvn package'
+        bat 'mvn package'
       }
     }
   }
